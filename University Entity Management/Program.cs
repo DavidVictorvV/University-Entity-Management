@@ -14,9 +14,15 @@ namespace University_Entity_Management
               .SetName("Jhon")
               .SetSpec("Romana");
 
+            var janitor = new AdditionalPersonnel(new BaseEntity())
+              .SetName("Doe")
+              .SetRole("Janitor");
+
             student1.Print();
             Console.WriteLine();
             professor1.Print();
+            Console.WriteLine();
+            janitor.Print();
             Console.WriteLine();
         }
     }

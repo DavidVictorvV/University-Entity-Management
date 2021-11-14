@@ -4,33 +4,33 @@ using System.Text;
 
 namespace University_Entity_Management
 {
-    public class Student: University
+    public class AdditionalPersonnel : University
     {
-        private string _name, _year;
+        private string _name, _role;
 
-        public Student(IFormatter formatter)
+        public AdditionalPersonnel(IFormatter formatter)
             : base(formatter)
         {
 
         }
 
-        public Student SetName(string name)
+        public AdditionalPersonnel SetName(string name)
         {
             _name = name;
             return this;
         }
 
 
-        public Student SetYear(string year)
+        public AdditionalPersonnel SetRole(string role)
         {
-            _year = year;
+            _role = role;
             return this;
         }
 
         public override void Print()
         {
             Console.WriteLine($"Name: {_formatter.Format(_name)}");
-            Console.WriteLine($"Year: {_formatter.Format(_year)}" );
+            Console.WriteLine($"Role: {_formatter.Format(_role)}" );
         }
     }
 }

@@ -4,11 +4,11 @@ using System.Text;
 
 namespace University_Entity_Management
 {
-    public abstract class Manuscript
+    public abstract class University
     {
         protected IFormatter _formatter;
 
-        protected Manuscript(IFormatter formatter)
+        protected University(IFormatter formatter)
         {
             _formatter = formatter;
         }

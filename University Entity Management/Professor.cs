@@ -4,7 +4,7 @@ using System.Text;
 
 namespace University_Entity_Management
 {
-    public class Professor: Manuscript
+    public class Professor: University
     {
         private string _name, _spec;
 
